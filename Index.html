@@ -7,33 +7,26 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: Georgia, serif; background: #f9f7f4; color: #1a1a1a; }
-
   nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 3rem; border-bottom: 0.5px solid #ccc; background: #f9f7f4; position: sticky; top: 0; z-index: 100; }
   .logo { font-size: 1.1rem; letter-spacing: 0.12em; font-style: italic; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { text-decoration: none; color: #555; font-size: 0.85rem; letter-spacing: 0.08em; font-family: Arial, sans-serif; }
   .nav-links a:hover { color: #1a1a1a; }
-
   .hero { padding: 5rem 3rem 3rem; max-width: 680px; }
   .hero h1 { font-size: 2.2rem; font-weight: 400; margin-bottom: 1rem; line-height: 1.3; }
   .hero p { font-size: 1rem; color: #555; line-height: 1.8; font-family: Arial, sans-serif; max-width: 520px; }
-
   .filter-bar { padding: 1.5rem 3rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .filter-btn { padding: 0.4rem 1rem; border: 0.5px solid #aaa; background: none; font-size: 0.8rem; letter-spacing: 0.07em; cursor: pointer; font-family: Arial, sans-serif; color: #555; border-radius: 2px; }
   .filter-btn.active, .filter-btn:hover { background: #1a1a1a; color: #f9f7f4; border-color: #1a1a1a; }
-
   .gallery { columns: 3; gap: 12px; padding: 0 3rem 4rem; }
   .gallery-item { break-inside: avoid; margin-bottom: 12px; cursor: pointer; }
   .gallery-item img { width: 100%; display: block; }
   .gallery-item:hover img { opacity: 0.88; }
   .caption { font-size: 0.72rem; color: #888; font-family: Arial, sans-serif; letter-spacing: 0.05em; padding: 4px 0 0; }
-
   .statement { padding: 3rem; border-top: 0.5px solid #ccc; max-width: 600px; margin: 0 auto; text-align: center; }
   .statement p { font-size: 1.05rem; line-height: 1.9; color: #333; font-style: italic; }
   .statement .name { font-family: Arial, sans-serif; font-style: normal; font-size: 0.8rem; letter-spacing: 0.1em; color: #888; margin-top: 1.5rem; }
-
   footer { padding: 2rem 3rem; border-top: 0.5px solid #ccc; font-family: Arial, sans-serif; font-size: 0.78rem; color: #aaa; display: flex; justify-content: space-between; }
-
   @media (max-width: 600px) {
     nav { padding: 1rem 1.5rem; }
     .hero, .filter-bar { padding-left: 1.5rem; padding-right: 1.5rem; }
@@ -55,7 +48,7 @@
 
 <div class="hero">
   <h1>Aaron Szeifert</h1>
-  <p>Painter. Oil, acrylic, drawing. Based in Albany, NY.</p>
+  <p>Painter. Oil, acrylic, drawing.</p>
 </div>
 
 <div class="filter-bar" id="work">
@@ -68,59 +61,176 @@
 <div class="gallery" id="gallery">
 
   <div class="gallery-item" data-cat="landscape">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/402px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Dunes, oil, 2017" style="background:#e8e4de; min-height:160px; object-fit:cover;">
-    <div class="caption">Dunes — oil, 2017</div>
+    <img src="https://i.imgur.com/LOoN7w0.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/uASe3kr.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/MNc6cUt.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/gzaY5mj.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/AKPg0ty.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/7NB2gqn.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/nEQRrjj.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/W0lkzNe.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/Bg7O2nU.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/TbkcEsp.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/BZh5Kwp.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/vrTUAAS.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/h8Xr4xd.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/SoVRYzt.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/yYdNDYy.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/15X5SkG.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/QwUwhn1.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/M9pzUOE.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/dpVeAQ3.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/XN4kP8N.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/0DuBvP6.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/V7Bl7ZT.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/Nlj4thM.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/UT6dDhf.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/uu0OBh3.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/Xyg6iGW.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/LS1s3aw.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/Xsj4hkv.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/nd95YUO.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/hyVRV99.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="landscape">
+    <img src="https://i.imgur.com/eOdhIWS.jpg" alt="Landscape" onerror="this.parentElement.style.display='none'">
   </div>
 
   <div class="gallery-item" data-cat="teapot">
-    <div style="background:#c8d4e0; height:180px; display:flex; align-items:center; justify-content:center; color:#7a8fa0; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Blue Teapot — oil ]</div>
-    <div class="caption">Blue Teapot — oil</div>
+    <img src="https://i.imgur.com/OAJHiNe.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
   </div>
-
-  <div class="gallery-item" data-cat="abstract">
-    <div style="background:#d4c5b5; height:200px; display:flex; align-items:center; justify-content:center; color:#8a7a6a; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Abstract — acrylic, 2013 ]</div>
-    <div class="caption">Untitled — acrylic, 2013</div>
-  </div>
-
-  <div class="gallery-item" data-cat="landscape">
-    <div style="background:#b5c4b0; height:150px; display:flex; align-items:center; justify-content:center; color:#6a7a65; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Marsh — oil, 2017 ]</div>
-    <div class="caption">Marsh — oil, 2017</div>
-  </div>
-
   <div class="gallery-item" data-cat="teapot">
-    <div style="background:#e0d4c0; height:190px; display:flex; align-items:center; justify-content:center; color:#8a7a60; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Teapot on mat — oil, 2017 ]</div>
-    <div class="caption">Teapot on mat — oil, 2017</div>
+    <img src="https://i.imgur.com/84rcH6j.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/PXvI7yk.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/mvjBJIa.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/K7jctlj.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/Jbzr5og.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/TlbIKLx.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/rMgvaZf.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/qivWlrB.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/XxnuXJA.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/ihOLqDE.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/ClyOcKr.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/5ORUYAV.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/ONFDFCG.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/GwHScKS.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/D3UfT26.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/SaBNb3z.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/n9nl6OS.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
+  </div>
+  <div class="gallery-item" data-cat="teapot">
+    <img src="https://i.imgur.com/APjERlS.jpg" alt="Teapot" onerror="this.parentElement.style.display='none'">
   </div>
 
   <div class="gallery-item" data-cat="abstract">
-    <div style="background:#c0c8b8; height:170px; display:flex; align-items:center; justify-content:center; color:#707860; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Village — acrylic ]</div>
-    <div class="caption">Village — acrylic</div>
+    <img src="https://i.imgur.com/a1HmwD9.jpg" alt="Abstract" onerror="this.parentElement.style.display='none'">
   </div>
-
-  <div class="gallery-item" data-cat="landscape">
-    <div style="background:#b8c4cc; height:160px; display:flex; align-items:center; justify-content:center; color:#688090; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Island — oil ]</div>
-    <div class="caption">Island — oil</div>
-  </div>
-
   <div class="gallery-item" data-cat="abstract">
-    <div style="background:#d0c0b0; height:210px; display:flex; align-items:center; justify-content:center; color:#806050; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Freighter — oil ]</div>
-    <div class="caption">Freighter — oil</div>
+    <img src="https://i.imgur.com/hAX5RWu.jpg" alt="Abstract" onerror="this.parentElement.style.display='none'">
   </div>
-
-  <div class="gallery-item" data-cat="landscape">
-    <div style="background:#c4b8a8; height:150px; display:flex; align-items:center; justify-content:center; color:#786050; font-family:Arial; font-size:0.75rem; letter-spacing:0.05em;">[ Hudson Valley — oil, 2026 ]</div>
-    <div class="caption">Hudson Valley — oil, 2026</div>
+  <div class="gallery-item" data-cat="abstract">
+    <img src="https://i.imgur.com/lLcfbYl.jpg" alt="Abstract" onerror="this.parentElement.style.display='none'">
   </div>
 
 </div>
 
 <div class="statement" id="statement">
   <p>"Each painting is made as differently as possible from the last. Across oil, acrylic, and drawing, the body of work traces a continuous arc of change — in approach, in material, in the artist himself."</p>
-  <div class="name">Aaron Szeifert &nbsp;·&nbsp; Albany, NY &nbsp;·&nbsp; ams-art.com</div>
+  <div class="name">Aaron Szeifert &nbsp;·&nbsp; ams-art.com</div>
 </div>
 
 <footer>
-  <span>© Aaron Szeifert</span>
+  <span>© Aaron Szeifert. All rights reserved. No reproduction without written permission.</span>
   <span>ams-art.com</span>
 </footer>
 
